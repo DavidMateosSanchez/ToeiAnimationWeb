@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TOEI Animation Web</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+        <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+        <script src="arriba.js"></script>
+        <script src="carrusel.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="https://corp.toei-anim.co.jp/en/index.html"><img src="logo_en.png" id="logo"></a>
+            <ul>
+                <li><a href="#"></a>COMPANY</li><span class="space"> / </span>
+                <li><a href="#"></a>BUSINESS</li><span class="space"> / </span>
+                <li><a href="#"></a>IR</li><span class="space"> / </span>
+                <li><a href="#"></a>FILM LIST<img src="https://corp.toei-anim.co.jp/resources/sw_img/icon/linkout.png" class="exit"></li>
+            </ul>
+            <div class="contacto">
+                <div class="idiomas">
+                    <span id="gray">JP</span>
+                    <span id="pink">EN</span>
+                    <img id="lupa" src="lupa.png">
+                </div>
+                <div class="dudas-contacto">
+                        <img src="https://corp.toei-anim.co.jp/en/common/header-utility-link/main/0116/teaserItems1/0/binaryNodeName/icon_faq.svg">
+                        <p class="dudas">FAQ</p>
+                        <img src="https://corp.toei-anim.co.jp/en/common/header-utility-link/main/0116/teaserItems1/00/binaryNodeName/icon_mail.svg">
+                        <p class="dudas">Contact Us</p>
+                </div>
+            </div>
+        </header>
+        <main>
+        <div class="video">
+            <video id="mi-video" autoplay="autoplay" preload="auto" muted defaultMuted playsinline>
+                <source src="https://corp.toei-anim.co.jp/resources/sw_img/movie/test-movie.mp4" type="video/mp4">
+            </video>
+            <img id="mi-imagen"src="https://corp.toei-anim.co.jp/en/index/mv-movie/main/00/teaserItems1/0/binaryNodeName/bg_top2_pc.png">
+        </div>
+        <script type='text/javascript'>
+            document.getElementById('mi-imagen').style.display = 'none';
+            document.getElementById('mi-video').addEventListener('ended', handlerVideo, false); //Agregar un listener para detectar cuando termina el video y mandarle la función que debe de ejecutar en ese instante
+        
+            function handlerVideo(e) {
+                document.getElementById('mi-imagen').style.display = '';
+                document.getElementById('mi-video').style.display = 'none';
+            }
+        </script>
+        <div class="separador">
+            <div class="fake-web">
+                <span><a href="https://corp.toei-anim.co.jp/en/press/COPY-press-6953497287618550869.html">Important Notices about the fake web-site</a></span>
+            </div>
+        </div>
+        <div class="noticias">
+            <div class="tablon-noticias">
+                <div class="release"><span>Press Release</span></div>
+                <table>
+                    <tr>
+                        <td>2022/07/01</td>
+                        <td><span class="press">PRESS</span></td>
+                        <td class="text">This summer, two international streaming giants Crunchyroll and iQIYI are bringing the new seasons of Saint Seiya: Knights of the Zodiac</td>
+                    </tr>
+                    <tr>
+                        <td>2022/06/15</td>
+                        <td><span class="press">PRESS</span></td>
+                        <td class="text">DRAGON BALL SUPER: SUPER HERO GLOBAL THEATRICAL RELEASE DATES</td>
+                    </tr>
+                    <tr>
+                        <td>2022/05/11</td>
+                        <td><span class="press">PRESS</span></td>
+                        <td class="text">Toei Animation and Crunchyroll today announced it will release Dragon Ball Super: SUPER HERO, the newest film in the worldwide anime blockbuster franchise, which will come to theaters globally in Summer 2022</td>
+                    </tr>
+                    <tr>
+                        <td>2022/04/28</td>
+                        <td><span class="press">PRESS</span></td>
+                        <td class="text">Result of Investigation of Unauthorized Network Access</td>
+                    </tr>
+                    <tr>
+                        <td>2022/04/15</td>
+                        <td><span class="press">PRESS</span></td>
+                        <td class="text">Restart of TV Anime Production and Investigation of Unauthorized Network Access</td>
+                    </tr>
+                </table>
+                <div class="boton">
+                    <button type="submit">MORE</button>
+                </div>
+            </div>
+        </div>
+        <div class="section1">
+            <div class="information-padre">
+                <h1 class="line"><span>C</span>OMPANY</h1>
+                <div class="information-hijo">
+                    <p>Information about TOEI ANIMATION CO., LTD. is as follows.</p>
+                    <div class="boton left">
+                        <button type="submit">MORE</button>
+                    </div>
+                </div>
+            </div>
+            <img src="1.jpg" class="imagen-seccion">
+        </div>
+        <div class="espacio-blanco"></div>
+        <div class="section2">
+            <div class="information-padre-left">
+                <h1 class="line"><span>B</span>USINESS</h1>
+                <div class="information-hijo-left">
+                    <p>We are expanding our business worldwide, from the planning and production of animation to licensing business and associated business.</p>
+                    <div class="boton left">
+                        <button type="submit">MORE</button>
+                    </div>
+                </div>
+            </div>
+            <img src="2.jpg" class="imagen-seccion-left">
+        </div>
+        <div class="espacio-blanco"></div>
+        <div class="section1">
+            <div class="information-padre">
+                <h1 class="line"><span>I</span>NVESTOR<br>
+                    RELATIONS</h1>
+                <div class="information-hijo">
+                    <p>Financial results,and stock information are as follows.</p>
+                    <div class="boton left">
+                        <button type="submit">MORE</button>
+                    </div>
+                </div>
+            </div>
+            <img src="3.jpg" class="imagen-seccion">
+        </div>
+        <div class="espacio-blanco"></div>
+        <div class="titulo-carrusel">
+            <h1>TOEI ANIMATION</h1>
+        </div>
+        <div class="centro-carrusel">
+        <div id="carrusel">
+            <a href="#" class="left-arrow"><img class="medida-flecha" src="flecha_izquierda.png" /></a>
+            <a href="#" class="right-arrow"><img class="medida-flecha" src="flecha_derecha.png" /></a>
+            <div class="carrusel">
+                <div class="product" id="product_0">
+                    <img src="sme_1126.jpg" width="137" height="193" />
+                    <h5>Sailor Moon Eternal</h5>
+                </div>
+                <div class="product" id="product_1">
+                    <img src="dragonq_1126.png" width="137" height="193" />
+                    <h5>Dragon Quest: The Adventure of Dai</h5>
+                </div>
+                <div class="product" id="product_2">
+                    <img src="digimon_1126.jpg" width="137" height="193" />
+                    <h5>DIGIMON ADVENTURE</h5>
+                </div>
+                <div class="product" id="product_3">
+                    <img src="oshiritantei_1126.jpg" width="137" height="193" />
+                    <h5>Butt Detective</h5>
+                </div>
+                <div class="product" id="product_4">
+                    <img src="onepiece_1126.jpg" width="137" height="193" />
+                    <h5>ONE PIECE</h5>
+                </div>
+                <div class="product" id="product_5">
+                    <img src="worldt_1126.jpg" width="137" height="193" />
+                    <h5>World Trigger 2nd season</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="espacio-blanco"></div>
+    <div class="museum">
+        <div class="boton2">
+            <button type="submit">TOEI ANIMATION<br> (Japanese Only)<img src="https://corp.toei-anim.co.jp/resources/sw_img/icon/linkout.png" class="exit white"></button>
+        </div>
+        <div class="boton2">
+            <button type="submit">TOEI ANIMATION MUSEUM<br> (Japanese Only)<img src="https://corp.toei-anim.co.jp/resources/sw_img/icon/linkout.png" class="exit white"></button>
+        </div>
+        <span class="ir-arriba"><img id="arriba" src="https://corp.toei-anim.co.jp/resources/sw_img/default/pagetop.svg"></span>
+    </div>
+    </main>
+    </body>
+    <footer>
+        <div class="enlaces">
+            <table class="enlaces-footer">
+            <tr>
+                <td>
+                    <h3><span>C</span>OMPANY</h3>
+                </td>
+                <td>
+                    <h3><span>B</span>USINESS</h3>
+                </td>
+                <td>
+                    <h3><span>I</span>NVESTOR<br>RELATIONS</h3>
+                </td>
+                <td>
+                    <h3>FAQ</h3>
+                    <h3>Contact Us</h3>
+                </td>
+            </tr>  
+            <tr>
+                <td><p>Message</p></td>
+                <td><p>Film</p></td>
+                <td><p>Management Policy</p></td>
+            </tr>
+            <tr>
+                <td><p>Outline</p></td>
+                <td><p>Licensing</p></td>
+                <td><p>Financial Information</p></td>
+            </tr>
+            <tr>
+                <td><p>History</p></td>
+                <td><p>Others</p></td>
+                <td><p>IR Library</p></td>
+            </tr>
+            <tr>
+                <td><p>Animation Production</p></td>
+                <td><p>Overseas</p></td>
+                <td><p>IR Calendar</p></td>
+            </tr>
+            <tr>
+                <td><p>Affiliated Companies</p></td>
+                <td> </td>
+                <td><p>Stock Information</p></td>
+            </tr>
+            <tr>
+                <td><p>About Pero</p></td>
+                <td> </td>
+                <td><p>Stock Price<img src="https://corp.toei-anim.co.jp/resources/sw_img/icon/linkout.png" class="exit"></p></td>
+            </tr>
+            </table>
+        </div>
+        <div class="derechos">
+            <a href="https://corp.toei-anim.co.jp/en/sitemap.html"><p class="map">Sitemap</p></a>
+            <p class="reserved">©  TOEI ANIMATION Co., Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+</html>
